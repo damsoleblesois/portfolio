@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/438a1f4013.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+        <div class  ="nav">
+            <nav>
+                <h2 class="logo"> Damien <span>PETIT</span></h2>
+                <ul>
+                    <li><a href="#" class="test">Acceuil</a></li>
+                    <li><a href="#" class="test">Projets</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="carousel">
+      <div class="container">
+        <div class="carousel-item">
+            <div class="carousel-item-1">
+                <img src="assets/IMG_8458 - Copie.jpg" alt="Image 1">
+                <h2>Bienvenue sur mon portfolio</h2>
+            </div>
+            <div class="carousel-item-2">
+                <img src="assets/parcours.png" alt="futur">
+            </div>
+          
+          
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="container">
+        <h2>Mes projets : </h2>
+        <ul>
+          <li><button  onclick="document.querySelector('.popup').style.display='flex';
+          document.querySelector('body').style.overflowY='hidden';
+          document.querySelector('.popup').classList.add('.active');">Projet spectromètre MP2</button></li>
+          <li><button  onclick="document.querySelector('.popup2').style.display='flex';
+            document.querySelector('body').style.overflowY='hidden';">Stage</button></li>
+        </ul>
+      </div>
+    </section>
+    <div class="popup">
+        <div class="sspop">
+            <img src="assets/Le_dosage_par_spectroscopie.png" alt="">
+        
+        <div class="comp">
+            <div class="compete">
+                <h3>Création du boitier</h3>
+                <p>Decoupe laser de bois pour créer le support du spectromètre
+                    <br> Competence: conception assisté par ordinateur
+                </p>
+            </div>
+            <div class="compete">
+                <h3>Montage électrique</h3>
+                <p>Réalistation d'un montage électrique permettant de récuperer les valeurs de la photo resistance <br> Competences : <br> -Systèmes électronique. <br> - Pilotage d'instrumentation <br> -Savoir mettre en place une chaîne de mesures </p>
+            </div>
+            <div class="compete">
+                <h3>Expression et communication</h3>
+                <p>Création d'un poster pour présenter le projet de manière concise et compréhensible pour tout le monde.</p>
+            </div>
+            <div class="compete">
+                <h3>Anglais</h3>
+                <p>Elaboration d'un "GuideLine" pour l'utilisateur de notre spéctromètre en anglais </p>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark" style="color: #ffffff; " onclick="document.querySelector('.popup').style.display='none';
+        document.querySelector('body').style.overflowY='scroll';
+        document.querySelector('.popup').classList.remove('active');"></i>
+        </div>
+        
+    </div>
+    
+    <div class="popup2">
+        <div class="sspop2">
+            <img src="assets/dfgd.png" alt="">
+        
+        <div class="comp">
+            <div class="compete">
+                <h3>En cours de création</h3>
+                <p>Ce stage m'a permis de dévolpper et d'acquerir de nouvelles compétences ; hard skills comme soft skills 
+                    <br> Competence:
+                    <br>- Montage mecanique
+                    <br>- Maths et traitement de signal
+                    <br>- Expression communication
+                </p>
+            
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark" style="color: #ffffff; " onclick="document.querySelector('.popup2').style.display='none';
+        document.querySelector('body').style.overflowY='scroll';
+        document.querySelector('.popup2').classList.remove('active');"></i>
+        </div>
+        
+    </div> 
+    </body>
+    </html>

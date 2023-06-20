@@ -1,0 +1,305 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Stoke:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  
+}
+
+
+/* Global styles */
+body {
+  background: linear-gradient(45deg, rgb(19, 33, 55),#0070c0);
+  background-size: 300%;
+  background-position: right;
+  animation:bouger 10s  infinite alternate;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  
+}
+
+@keyframes bouger {
+  0%{
+      background-position: right;
+  }
+  100%{
+      background-position: left;
+  }
+  
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+
+nav {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgb(19, 33, 55);
+  border-bottom: solid 2px rgb(50, 81, 131);
+}
+.logo {
+  color: white;
+  font-size: 35px;
+
+}
+
+span {
+  color: #ea1538;
+}
+
+.test:hover{
+  font-size: 110%;
+}
+
+nav ul li {
+  list-style-type: none ;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+nav ul li a:hover{
+  color: #ea1538;
+  transition: .3s;
+}
+
+
+h2{
+  font-size: 34px;
+  font-family: 'Dancing Script';
+}
+
+h3{
+  font-size: 24px;
+  font-family: 'Dancing Script';
+}
+/* Carousel styles */
+#carousel{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.carousel-item {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carousel-item-2 img{
+  height: 400px;
+  width:auto;
+  border-radius: 20px;
+}
+.carousel-item img{
+  height: 300px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.carousel-item h2 {
+  font-size: 34px;
+  font-family: 'Dancing Script';
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.carousel-item-1{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+}
+
+/* Projects styles */
+#projects {
+  padding: 60px 0;
+  background-color: rgb(50, 81, 131);
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+}
+
+#projects ul {
+  list-style: none;
+}
+
+#projects li {
+  margin-bottom: 10px;
+}
+
+#projects li a {
+  text-decoration: none;
+  color: #0070c0;
+}
+
+#projects li a:hover {
+  color: #333;
+}
+
+
+.popup{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0,0,0,0.6) ;
+  
+}
+
+@keyframes baisse {
+  0% {
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 3%);
+  }
+}
+
+.popup img{
+  height: 600px;
+  width: auto;
+}
+.sspop{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(19, 33, 55);
+  animation: baisse 0.4s ease-out forwards;
+}
+
+.sspop i{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sspop .comp{
+  height: 80%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sspop .comp .compete{
+  margin-left: 30px;
+
+}
+
+/*Pop up stage*/
+
+.popup2{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0,0,0,0.6) ;
+  
+}
+
+@keyframes baisse {
+  0% {
+    -webkit-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 3%);
+  }
+}
+
+.popup2 img{
+  height: 600px;
+  width: auto;
+}
+.sspop2{
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(19, 33, 55);
+  animation: baisse 0.4s ease-out forwards;
+}
+
+.sspop2 i{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sspop2 .comp{
+  height: 80%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sspop2 .comp .compete{
+  margin-left: 30px;
+
+}
+
+/*Hover projets*/
+
+#projects .container li button {
+  display: inline-block;
+  border: none;
+  background: linear-gradient(130deg, #075693, #333399);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#projects .container li button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
